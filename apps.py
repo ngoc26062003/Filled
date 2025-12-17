@@ -7,8 +7,6 @@ import streamlit as st
 import pandas as pd
 from docx import Document
 from docx.shared import Inches
-from docx.enum.text import WD_BREAK
-from docx2pdf import convert
 import os
 import copy
 import tempfile
@@ -286,4 +284,5 @@ if st.button("🚀 BẮT ĐẦU XỬ LÝ", type="primary"):
                                 mime="application/pdf"
                             )
     else:
+
         st.error("Vui lòng upload đủ file Excel và Word mẫu!")
